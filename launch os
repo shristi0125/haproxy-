@@ -1,0 +1,17 @@
+- hosts: 127.0.0.1
+  tasks:
+  - name: "Launching EC2 Instance"
+    ec2:
+       region: ap-south-1
+       image: ami-08f63db601b82ff5f
+       instance_type: t2.micro
+       vpc_subnet_id: subnet-25d5dc4d
+       group_id: sg-045302c8e55dcf5ed
+       key_name: awskey
+       instance_tags:
+         Name: OS_From_Ansible
+       state: present
+       count: 2
+       aws_access_key: give your acess key
+       aws_secret_key: give your secret key
+~
