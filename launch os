@@ -12,6 +12,6 @@
          Name: OS_From_Ansible
        state: present
        count: 2
-       aws_access_key: give your acess key
-       aws_secret_key: give your secret key
+       aws_access_key: xxxxxxxxxxxxxxxxxx
+       aws_secret_key: xxxxxxxxxxxxxxxxxxx
 ~
